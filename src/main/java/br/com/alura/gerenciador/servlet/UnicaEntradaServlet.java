@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.alura.gerenciador.servlet.acao.Acao;
+import br.com.alura.gerenciador.acao.Acao;
 
 /**
  * Servlet implementation class UnicaEntradaServlet

@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.servlet.acao;
+package br.com.alura.gerenciador.acao;
 
 import java.io.IOException;
 
