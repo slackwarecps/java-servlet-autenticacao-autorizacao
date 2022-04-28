@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 	
-<%@ page import="java.util.List, br.com.alura.gerenciador.servlet.modelo.Empresa" %>
-
+<%@ page import="java.util.List, br.com.alura.gerenciador.modelo.Empresa" %>
+<%@ page import="java.util.List, br.com.alura.gerenciador.modelo.Usuario" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
@@ -13,7 +13,19 @@
 <title>Lista de Empresas :: Java Standard Taglib jstl </title>
 </head>
 <body>
-Lista de Empresas: <br/>
+
+	Usuario Logado: ${ usuarioLogado.login }
+	<br>
+	<br>
+	<br>
+
+	<c:if test="${not empty empresa}">
+		Empresa ${empresa}  cadastrada com sucesso!
+	</c:if>
+
+
+
+	Lista de Empresas: <br/>
 
 		<ul>
 			<c:forEach items="${empresas}" var="empresa"> 
