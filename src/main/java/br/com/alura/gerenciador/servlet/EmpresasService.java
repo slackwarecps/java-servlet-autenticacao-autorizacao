@@ -10,7 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
+<<<<<<< HEAD
 import com.thoughtworks.xstream.XStream;
+=======
+>>>>>>> e20cadab624cc788a3bc8eef319471c260a518ab
 
 import br.com.alura.gerenciador.modelo.Banco;
 import br.com.alura.gerenciador.modelo.Empresa;
@@ -25,6 +28,7 @@ public class EmpresasService extends HttpServlet {
 	
 		List<Empresa> empresas = new Banco().getEmpresas();
 		
+<<<<<<< HEAD
 		String valor = request.getHeader("Accept");
 		
 		if (valor.contains("xml")) {
@@ -44,6 +48,17 @@ public class EmpresasService extends HttpServlet {
 		}
 
 
+=======
+		
+		
+		Gson gson = new Gson();
+		String json = gson.toJson(empresas);  
+		
+		
+		response.setContentType("application/json");
+		response.getWriter().println(json);
+		
+>>>>>>> e20cadab624cc788a3bc8eef319471c260a518ab
 		
 	}
 
