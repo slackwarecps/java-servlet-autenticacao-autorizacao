@@ -21,3 +21,8 @@ Um filtro recebe como parâmetro, do método doFilter, um ServletRequest e um Se
 Ambos, ServletRequest e ServletResponse, são interfaces mais genéricas do que HttpServletRequest e HttpServletResponse
 
 Para chamar o próximo filtro na cadeia, usamos o objeto FilterChain
+
+https://json.org/example.html
+
+https://github.com/google/gson
+
