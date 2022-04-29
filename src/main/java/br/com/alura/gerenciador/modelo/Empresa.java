@@ -3,7 +3,7 @@ package br.com.alura.gerenciador.modelo;
 import java.util.Date;
 
 public class Empresa {
-	
+
 	private Integer id;
 	private String nome;
 	private Date dataAbertura = new Date();
@@ -21,24 +21,11 @@ public class Empresa {
 		this.nome = nome;
 	}
 	
-	
-	
-
-	
-
+	public void setDataAbertura(Date dataAbertura) {
+		this.dataAbertura = dataAbertura;
+	}
 	
 	public Date getDataAbertura() {
 		return dataAbertura;
 	}
-	public void setDataAbertura(Date dataAbertura) {
-		this.dataAbertura = dataAbertura;
-	}
-	@Override
-	public String toString() {
-		return "Empresa [id=" + id + ", nome=" + nome + ", dataAbertura=" + dataAbertura + "]";
-	}
-	
-	
-	
-
 }

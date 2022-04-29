@@ -11,15 +11,11 @@ public class Logout implements Acao {
 
 	@Override
 	public String executa(HttpServletRequest request, HttpServletResponse response)
-			throws IOException, ServletException {
-		HttpSession sessao =request.getSession();
+			throws ServletException, IOException {
 		
-		
-		
-		//sessao.removeAttribute("usuarioLogado");
-		
+		HttpSession sessao = request.getSession();
+//		sessao.removeAttribute("usuarioLogado");
 		sessao.invalidate();
-		
 		return "redirect:entrada?acao=LoginForm";
 	}
 
