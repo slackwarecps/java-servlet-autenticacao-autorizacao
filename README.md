@@ -26,3 +26,8 @@ https://json.org/example.html
 
 https://github.com/google/gson
 
+
+https://hc.apache.org/httpcomponents-client-5.1.x/
+
+
+
